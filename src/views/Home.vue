@@ -2,6 +2,7 @@
   <div class="home">home</div>
   <my-svg name="bill"></my-svg>
   <my-svg name="broadcast"></my-svg>
+  <div>测试</div>
 </template>
 
 <script setup lang="ts">
