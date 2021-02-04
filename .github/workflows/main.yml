@@ -30,3 +30,4 @@ jobs:
         command: |
           cd /root
           ./ci.sh ${{ github.ref }}
+
