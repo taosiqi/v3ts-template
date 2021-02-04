@@ -21,7 +21,7 @@ jobs:
 #       run: ls
     - name: install
       env:
-        GITHUB_CONTEXT: ${{ GITHUB_SHA }}
+        GITHUB_CONTEXT: ${{ toJSON(github.sha) }}
       run: |
         echo $GITHUB_CONTEXT
 #       env:
