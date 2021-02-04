@@ -11,16 +11,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: checkout
     - uses: actions/checkout@v2.3.4
       with:
         ref: ${{ github.ref }}
+    - name: setup-node
     - uses: actions/setup-node@v2.1.4
       with:
         node-version: 15
     - name: Deploy
     - uses: garygrossgarten/github-action-ssh@release
       with:
-        command: cd /root && ./ci.sh ${{ github.ref }}
+        command: |
+          cd /root 
+          ./ci.sh ${{ github.ref }}
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         privateKey: ${{ secrets.PRIVATE_KEY}}
