@@ -1,3 +1,4 @@
+  
 # deploy.yml
 name: release
 on:
@@ -9,16 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          command: |
-            cd /root 
-            pwd 
-            ./ci.sh ${{ GITHUB_REF }}
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.PRIVATE_KEY}}
-
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 15
+    - name: install
+      run: ls
