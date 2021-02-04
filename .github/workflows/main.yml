@@ -22,12 +22,11 @@ jobs:
 #           npm install
 #           npm build
     - name: Deploy
-      run: echo "开始打包"
-    - uses: garygrossgarten/github-action-ssh@release
+      run: echo ${{ github.ref }}
+    - uses: fifsky/ssh-action@v0.0.5
       with:
         command: |
           cd /root 
           ./ci.sh ${{ github.ref }}
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        privateKey: ${{ secrets.PRIVATE_KEY}}
+        key: ${{ secrets.PRIVATE_KEY}}
