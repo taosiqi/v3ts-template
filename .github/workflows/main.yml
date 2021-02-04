@@ -21,12 +21,13 @@ jobs:
       run: |
           npm install
           npm build
-#     - name: Deploy
-#     - uses: garygrossgarten/github-action-ssh@release
-#       with:
-#         command: |
-#           cd /root 
-#           ./ci.sh ${{ github.ref }}
-#         host: ${{ secrets.HOST }}
-#         username: ${{ secrets.USERNAME }}
-#         privateKey: ${{ secrets.PRIVATE_KEY}}
+    - name: Deploy
+      run: echo "开始打包"
+    - uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: |
+          cd /root 
+          ./ci.sh ${{ github.ref }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        privateKey: ${{ secrets.PRIVATE_KEY}}
