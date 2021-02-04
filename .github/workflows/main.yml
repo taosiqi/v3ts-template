@@ -1,0 +1,22 @@
+# deploy.yml
+name: release
+on:
+  push:
+    tags:
+      - 'staging*'
+      - 'develop*'
+      - 'staging*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy
+        uses: garygrossgarten/github-action-ssh@release
+        run:  echo $GITHUB_REF
+        with:
+          command: cd /root && ./ci.sh ${{ $GITHUB_REF }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          privateKey: ${{ secrets.PRIVATE_KEY}}
+
