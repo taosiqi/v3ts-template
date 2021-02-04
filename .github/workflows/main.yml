@@ -23,9 +23,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github) }}
       run: |
-        echo $GITHUB_SHA
         echo $GITHUB_CONTEXT.ref
-        echo $GITHUB_CONTEXT
 #       env:
 #           FIRST_NAME: Mona
 #           middle_name: The
