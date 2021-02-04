@@ -21,9 +21,9 @@ jobs:
 #       run: ls
     - name: install
       env:
-        GITHUB_CONTEXT: ${{ toJSON(github) }}
+        GITHUB_CONTEXT: ${{ GITHUB_SHA }}
       run: |
-        echo $GITHUB_CONTEXT.ref
+        echo $GITHUB_CONTEXT
 #       env:
 #           FIRST_NAME: Mona
 #           middle_name: The
