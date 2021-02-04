@@ -5,6 +5,7 @@
 --|--|--
  - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
  - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
+ - | 修改ci脚本 | [e73e5f4](https://github.com/taosiqi/v3ts-template/commit/e73e5f4)
  - | 修改ci脚本 | [123ec1c](https://github.com/taosiqi/v3ts-template/commit/123ec1c)
  - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
 
