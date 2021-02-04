@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#sed -i "s/\r//" ./ci.sh  解决错误/bin/bash^M: bad interpreter: No such file or directory
 url="https://codeload.github.com/taosiqi/v3ts-template/tar.gz/"
 array=(${1//// })
 tagName=${array[2]}
@@ -32,7 +32,7 @@ sed -i "20s/projectState:.*/`cat temp_state.txt`/g" ./src/config/index.js
 rm -rf temp_state.txt
 sed -n 20p ./src/config/index.js
 echo "替换完成，开始使用npm构建项目"
-npm
+npm install
 chmod -R 777 node_modules
 npm run build
 echo "项目构建完毕，删除原目录文件"
