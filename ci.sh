@@ -31,15 +31,15 @@ echo "projectState: $projectState," > temp_state.txt
 sed -i "20s/projectState:.*/`cat temp_state.txt`/g" ./src/config/index.js
 rm -rf temp_state.txt
 sed -n 20p ./src/config/index.js
-echo "替换完成，开始使用yarn构建项目"
-yarn
+echo "替换完成，开始使用npm构建项目"
+npm
 chmod -R 777 node_modules
-yarn run build
+npm run build
 echo "项目构建完毕，删除原目录文件"
 rm -rf $projectDirectory"*"
 echo "删除完成，复制目录"
 cp -R dist/* $projectDirectory
-echo "打包完毕"
+echo "打包完毕"n
 echo "清理目录"
 cd ../
 rm -rf "./"$tagName
