@@ -17,7 +17,7 @@ const prodState = {
 }
 
 module.exports = {
-  projectState: devState ,
+  projectState: devState,
   name: 'Vue Element Template',
   port: 8888,
   isProduction: process.env.ENV === 'production',
