@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      sha: github['sha']
+      sha: $GITHUB_SHA
     steps:
 #     - uses: actions/checkout@v2.3.4
 #       with:
