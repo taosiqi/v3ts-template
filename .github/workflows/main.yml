@@ -6,7 +6,7 @@ on:
     tags:
       - 'staging*'
       - 'develop*'
-      - 'staging*'
+      - 'release*'
 jobs:
   build:
     runs-on: ubuntu-latest
