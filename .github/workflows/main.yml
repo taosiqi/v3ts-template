@@ -21,12 +21,12 @@ jobs:
     #       run: |
     #           npm install
     #           npm build
-      - uses: garygrossgarten/github-action-ssh@release # 使用ssh链接服务器
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.PRIVATE_KEY}}
-          port: ${{ secrets.POTR}}
-          command: |
-            cd /root
-            ./ci.sh ${{ github.ref }}
+    - uses: garygrossgarten/github-action-ssh@release # 使用ssh链接服务器
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        privateKey: ${{ secrets.PRIVATE_KEY}}
+        port: ${{ secrets.POTR}}
+        command: |
+          cd /root
+          ./ci.sh ${{ github.ref }}
