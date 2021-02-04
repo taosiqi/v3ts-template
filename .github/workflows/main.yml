@@ -22,7 +22,7 @@ jobs:
 #     - name: install
 #       run: ls
     - name: install
-      run: ${{ GITHUB_REF }}
+      run: echo $GITHUB_REF
 #       env:
 #           FIRST_NAME: Mona
 #           middle_name: The
