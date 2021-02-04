@@ -10,14 +10,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      sha: github-sha
     steps:
     - uses: actions/checkout@v2.3.4
       with:
-        ref: $GITHUB_SHA
+        ref: env.sha
     - uses: actions/setup-node@v1
       with:
         node-version: 15
     - name: install
       run: ls
     - name: install
-      run: $GITHUB_SHA
+      run: $FIRST_NAME
+      env:
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
