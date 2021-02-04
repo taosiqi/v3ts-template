@@ -15,7 +15,7 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJSON(github.sha) }}
       with:
-        ref: ${{ toJSON(github.sha) }}
+        ref: ${{ github.sha }}
     - uses: actions/setup-node@v1
       with:
         node-version: 15
