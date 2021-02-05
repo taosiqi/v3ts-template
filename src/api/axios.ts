@@ -85,7 +85,7 @@ export function fetchGet(url: string, params: {}): Promise<any> {
   return new Promise((resolve, reject) => {
     axios
       .get(url, {
-        params: params,
+        params: params
       })
       .then(
         (response) => {
@@ -105,7 +105,7 @@ export function fetchDelete(url: string, params: {}): Promise<any> {
   return new Promise((resolve, reject) => {
     axios
       .delete(url, {
-        params: params,
+        params: params
       })
       .then(
         (response) => {

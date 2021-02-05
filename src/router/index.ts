@@ -4,13 +4,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
-  },
+    component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue')
+  }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(process.env.BASE_URL),
-  routes,
+  routes
 })
 
 export default router

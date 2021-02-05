@@ -1,13 +1,19 @@
-## 0.0.1 (2021-02-04)
+## 0.0.1 (2021-02-05)
 
 ### 🌟 新功能
 范围|描述|commitId
 --|--|--
- - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
- - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
+ - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
  - | 修改ci脚本 | [e73e5f4](https://github.com/taosiqi/v3ts-template/commit/e73e5f4)
  - | 修改ci脚本 | [123ec1c](https://github.com/taosiqi/v3ts-template/commit/123ec1c)
- - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
+ - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
+ - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
+
+
+### 📦 持续集成
+范围|描述|commitId
+--|--|--
+ - | 测试ci脚本 | [6d4ebe1](https://github.com/taosiqi/v3ts-template/commit/6d4ebe1)
 
 
 范围|描述|commitId

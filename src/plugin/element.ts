@@ -84,7 +84,7 @@ import {
   ElLoading,
   ElMessage,
   ElMessageBox,
-  ElNotification,
+  ElNotification
 } from 'element-plus'
 
 const components = [
@@ -141,7 +141,7 @@ const components = [
   // ElPopover,
   // ElPopper,
   // ElProgress,
-  ElRadio,
+  ElRadio
   // ElRadioButton,
   // ElRadioGroup
   // ElRate,

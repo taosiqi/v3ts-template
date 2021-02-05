@@ -8,6 +8,7 @@ import iconPark from './plugin/icon-park'
 import mySvg from './plugin/my-svg'
 import mitt from 'mitt' //组件通信
 import nprogress from './plugin/nprogress'
+import directives from './directives/index'
 // 创建App实例
 const app = createApp(App)
 
@@ -15,6 +16,8 @@ const app = createApp(App)
 element(app)
 iconPark(app)
 mySvg(app)
+// 注册全局自定义指令
+directives(app)
 nprogress(router)
 // 挂载全局
 app.config.globalProperties.$emitter = mitt() //挂载到全局
