@@ -3,6 +3,8 @@
     <el-radio value="1" label="1">备选项</el-radio>
     <el-radio value="2" label="2">备选项</el-radio>
     <icon-alarm
+      @click="setLog"
+      class="totop"
       v-waves
       theme="multi-color"
       size="35"
@@ -14,6 +16,7 @@
 </template>
 <script>
   import { defineComponent, ref } from 'vue'
+  import { scrollTo } from '@/utils/scroll-to'
 
   export default defineComponent({
     name: 'apps',
@@ -21,7 +24,7 @@
     setup() {
       let dialogVisible = ref(true)
       function setLog() {
-        console.log(123)
+        scrollTo(0, 800)
       }
       return {
         setLog,
@@ -34,7 +37,12 @@
   @import 'styles/base';
 
   .container-main {
+    height: 3000px;
     color: $red-color;
     @include placeholderColor();
+  }
+  .totop {
+    position: sticky;
+    top: 100px;
   }
 </style>
