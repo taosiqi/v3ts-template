@@ -28,7 +28,7 @@ import {
   // ElColorPicker,
   // ElContainer,
   // ElDatePicker,
-  // ElDialog,
+  ElDialog,
   // ElDivider,
   // ElDrawer,
   // ElDropdown,
@@ -84,7 +84,7 @@ import {
   ElLoading,
   ElMessage,
   ElMessageBox,
-  ElNotification,
+  ElNotification
 } from 'element-plus'
 
 const components = [
@@ -114,7 +114,7 @@ const components = [
   // ElColorPicker,
   // ElContainer,
   // ElDatePicker,
-  // ElDialog,
+  ElDialog,
   // ElDivider,
   // ElDrawer,
   // ElDropdown,
@@ -141,7 +141,7 @@ const components = [
   // ElPopover,
   // ElPopper,
   // ElProgress,
-  ElRadio,
+  ElRadio
   // ElRadioButton,
   // ElRadioGroup
   // ElRate,

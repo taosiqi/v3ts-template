@@ -1,6 +1,6 @@
 import mySvg from '@/components/my-svg/index.vue'
 
-//字节第三方图标库
+// assets/icons下面的svg图标
 export default (app: any) => {
   app.component('my-svg', mySvg)
 }
