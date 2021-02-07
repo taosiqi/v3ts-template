@@ -4,33 +4,33 @@
   </svg>
 </template>
 <script>
-import { defineComponent, computed } from 'vue'
-export default defineComponent({
-  name: 'my-svg',
-  props: {
-    name: {
-      type: String,
-      default: '',
+  import { defineComponent, computed } from 'vue'
+  export default defineComponent({
+    name: 'my-svg',
+    props: {
+      name: {
+        type: String,
+        default: ''
+      }
     },
-  },
 
-  setup(props) {
-    const iconName = computed(() => {
-      return `#${props.name}`
-    })
-    return {
-      iconName,
+    setup(props) {
+      const iconName = computed(() => {
+        return `#${props.name}`
+      })
+      return {
+        iconName
+      }
     }
-  },
-})
+  })
 </script>
 <style lang="scss" scoped>
-.mw-svg {
-  width: 1.4em;
-  height: 1.4em;
-  fill: currentColor;
-  overflow: hidden;
-  line-height: 1em;
-  display: inline-block;
-}
+  .mw-svg {
+    width: 1.4em;
+    height: 1.4em;
+    fill: currentColor;
+    overflow: hidden;
+    line-height: 1em;
+    display: inline-block;
+  }
 </style>

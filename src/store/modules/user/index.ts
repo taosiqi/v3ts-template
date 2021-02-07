@@ -1,5 +1,5 @@
 const state = {
-  user: 123,
+  user: 123
 }
 const getters = {}
 const actions = {}
@@ -9,5 +9,5 @@ export default {
   state,
   getters,
   actions,
-  mutations,
+  mutations
 }
