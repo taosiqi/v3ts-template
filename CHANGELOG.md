@@ -1,4 +1,4 @@
-## 0.0.1 (2021-02-05)
+## 0.0.1 (2021-02-07)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -6,6 +6,7 @@
  - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
  - | 修改ci脚本 | [e73e5f4](https://github.com/taosiqi/v3ts-template/commit/e73e5f4)
  - | 修改ci脚本 | [123ec1c](https://github.com/taosiqi/v3ts-template/commit/123ec1c)
+ - | 自定义全局指令开发 | [8f8c57d](https://github.com/taosiqi/v3ts-template/commit/8f8c57d)
  - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
  - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
 
