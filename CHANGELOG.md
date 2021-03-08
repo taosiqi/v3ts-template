@@ -1,25 +1,8 @@
-## 0.0.1 (2021-02-07)
-
-### 🌟 新功能
-范围|描述|commitId
---|--|--
- - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
- - | 修改ci脚本 | [e73e5f4](https://github.com/taosiqi/v3ts-template/commit/e73e5f4)
- - | 修改ci脚本 | [123ec1c](https://github.com/taosiqi/v3ts-template/commit/123ec1c)
- - | 全局copy、拖动弹窗、权限、波浪指令 | [a3b2889](https://github.com/taosiqi/v3ts-template/commit/a3b2889)
- - | 自定义全局指令开发 | [8f8c57d](https://github.com/taosiqi/v3ts-template/commit/8f8c57d)
- - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
- - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
-
-
-### 📦 持续集成
-范围|描述|commitId
---|--|--
- - | 测试ci脚本 | [6d4ebe1](https://github.com/taosiqi/v3ts-template/commit/6d4ebe1)
-
+## 0.0.1 (2021-03-08)
 
 范围|描述|commitId
 --|--|--
+ - | new | [21ffa87](https://github.com/taosiqi/v3ts-template/commit/21ffa87)
  - | Update main.yml | [80b0471](https://github.com/taosiqi/v3ts-template/commit/80b0471)
  - | Update main.yml | [e7c2357](https://github.com/taosiqi/v3ts-template/commit/e7c2357)
  - | Update main.yml | [3f3637f](https://github.com/taosiqi/v3ts-template/commit/3f3637f)
@@ -55,4 +38,23 @@
  - | Update main.yml | [843a610](https://github.com/taosiqi/v3ts-template/commit/843a610)
  - | Update main.yml | [62ae899](https://github.com/taosiqi/v3ts-template/commit/62ae899)
  - | Initial commit | [6fa3cf2](https://github.com/taosiqi/v3ts-template/commit/6fa3cf2)
+
+
+### 🌟 新功能
+范围|描述|commitId
+--|--|--
+ - | ci脚本修改 | [5d9996d](https://github.com/taosiqi/v3ts-template/commit/5d9996d)
+ - | 修改ci脚本 | [e73e5f4](https://github.com/taosiqi/v3ts-template/commit/e73e5f4)
+ - | 修改ci脚本 | [123ec1c](https://github.com/taosiqi/v3ts-template/commit/123ec1c)
+ - | 全局copy、拖动弹窗、权限、波浪指令 | [a3b2889](https://github.com/taosiqi/v3ts-template/commit/a3b2889)
+ - | 增加滚动到顶部功能 | [2d61984](https://github.com/taosiqi/v3ts-template/commit/2d61984)
+ - | 自定义全局指令开发 | [8f8c57d](https://github.com/taosiqi/v3ts-template/commit/8f8c57d)
+ - | 首次上传 | [8b607f7](https://github.com/taosiqi/v3ts-template/commit/8b607f7)
+ - | 首次提交 | [fbef38a](https://github.com/taosiqi/v3ts-template/commit/fbef38a)
+
+
+### 📦 持续集成
+范围|描述|commitId
+--|--|--
+ - | 测试ci脚本 | [6d4ebe1](https://github.com/taosiqi/v3ts-template/commit/6d4ebe1)
 

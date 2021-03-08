@@ -3,7 +3,6 @@
 const path = require('path')
 const defaultSettings = require('./src/config/index.js')
 const CompressionPlugin = require('compression-webpack-plugin')
-
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
@@ -41,6 +40,7 @@ module.exports = {
     }
   },
   chainWebpack(config) {
+    // debugger和console.log已经默认去除
     // 提前预加载提高切换路由的体验
     config.plugin('preload').tap(() => [
       {
@@ -57,10 +57,7 @@ module.exports = {
     //开启gzip压缩，需要服务端支持
     config.plugin('CompressionPlugin').use(CompressionPlugin, [])
     // 配置svg svg雪碧图
-    config.module
-      .rule('svg')
-      .exclude.add(resolve('src/assets/icons'))
-      .end()
+    config.module.rule('svg').exclude.add(resolve('src/assets/icons')).end()
     config.module
       .rule('icons')
       .test(/\.svg$/)
@@ -69,7 +66,7 @@ module.exports = {
       .use('svg-sprite-loader')
       .loader('svg-sprite-loader')
     // runtime.js 处理策略 打包成一个单独的文件放进index.html https://github.com/PanJiaChen/vue-element-admin/blob/master/vue.config.js
-    config.when(defaultSettings.isProduction, config => {
+    config.when(defaultSettings.isProduction, (config) => {
       config
         .plugin('ScriptExtHtmlWebpackPlugin')
         .after('html')
